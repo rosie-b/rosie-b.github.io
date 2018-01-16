@@ -37,6 +37,15 @@ h3 {
 li {
     list-style-type: none;
 }
+
+.bulletpoint {
+    list-style-type: circle;
+}
+
+#box_model {
+    text-align: center;
+}
+
 footer {
     background: white;
     border-bottom: 2px solid rgb(73, 11, 131);
