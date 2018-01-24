@@ -1,0 +1,165 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(294, 100%, 99%);
+}
+
+/* --- INDEX - HEADING --- */
+
+.index-title {
+  margin: 1%;
+  font-family: Courier New, Courier, monospace;
+  color: hsl(294, 100%, 20%);
+  border-bottom: 2px solid hsl(294, 100%, 20%);
+}
+
+.index-title h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+/* --- INDEX - NAVIGATION (BLOG LINKS) --- */
+.blog-nav {
+  padding: 1%;
+}
+
+.blog-nav li {
+  list-style-type: none;
+  margin-bottom: 0rem;
+}
+
+.button {
+  margin-bottom: 0rem; 
+  padding: 0px 5px;
+  white-space: normal;
+  min-width: 99%;
+  max-width: 99%;
+  overflow: hidden; 
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* --- MAIN CONTENT (INDEX AND BLOG) --- */
+.main-content {
+  padding: 1% 2% 1% 2%;
+}
+
+.main-content p, li {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+  font-family: 'Ubuntu Mono', monospace;
+  color: hsl(294, 0%, 30%);
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2rem;
+  color: hsl(294, 0%, 30%);
+}
+
+/* --- FOOTER (INDEX AND BLOG PAGES) --- */
+.footer {
+  margin: 2% 2% 15% 2%;
+  border-bottom: 3px solid hsl(294, 100%, 13%);
+}
+
+/* --- INDEX - MEDIA QUERIES --- */
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+  .index-title {
+    border-bottom: 3px solid hsl(294, 100%, 20%);
+    border-right: 3px solid hsl(294, 100%, 20%);
+  }
+  .index-title h1 {
+    font-size: 5.0rem;
+    text-align: left;
+  }
+  h2 { 
+    font-size: 4.0rem; 
+    text-align: left;
+  }
+}
+
+/* --- BLOG - HEADING --- */
+
+.blog-title {
+  margin: 1%;
+  font-family: Courier New, Courier, monospace;
+  color: hsl(294, 100%, 20%);
+  border-bottom: 2px solid hsl(294, 100%, 20%);
+}
+
+.blog-title h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+.home-button {
+  margin: auto;
+  text-align: center;
+}
+
+.home-button figure {
+  margin: 0.5%;
+  padding:0%;
+}
+
+.home-button-top figure img {
+  max-height: 6rem;
+}
+
+.home-button-bottom figure img {
+  max-height: 4rem;
+}
+
+.blog-nav h2 {
+  font-family: 'Ubuntu Mono', monospace;
+  color: hsl(294, 0%, 30%);
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+
+/* --- BLOG - MEDIA QUERIES --- */
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+
+  .blog-title {
+  border-bottom: 3px solid hsl(294, 100%, 20%);
+  border-right: 3px solid hsl(294, 100%, 20%);
+  }
+    
+  .blog-title h1 {
+  font-size: 5.0rem;
+  text-align: left;
+  }
+
+  .blog-nav h2 {
+    font-size: 3.0rem;
+    text-align: left;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+  }
+ 
+  .home-button-top figure img {
+    max-height: 8rem;
+  }
+
+  .home-button-bottom figure img {
+    max-height: 6rem;
+  }
+
+}
