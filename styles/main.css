@@ -44,6 +44,24 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+/* --- INDEX - MEDIA QUERIES --- */
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+  .index-title {
+    border-bottom: 3px solid hsl(294, 100%, 20%);
+    border-right: 3px solid hsl(294, 100%, 20%);
+  }
+  .index-title h1 {
+    font-size: 5.0rem;
+    text-align: left;
+  }
+  h2 { 
+    font-size: 4.0rem; 
+    text-align: left;
+  }
+}
+
 /* --- MAIN CONTENT (INDEX AND BLOG) --- */
 .main-content {
   padding: 1% 2% 1% 2%;
@@ -65,29 +83,40 @@ h3 {
   color: hsl(294, 0%, 30%);
 }
 
+/*
+.column-img-style {
+  text-align: center;
+  min-width:   
+}
+
+.four-columns-img {
+  min-width: 45px;
+  max-width: 200px;
+  padding: 0.5%;
+}
+*/
+
+.row-img {
+  min-width: 50px;
+  max-width: 200px;
+}
+
+/* --- MAINT CONTENT - MEDIA QUERIES --- */
+
+/* Larger than phablet (also point when grid becomes active) */
+/*@media (min-width: 550px) {
+  .four-columns-img {
+  max-width: 50px;
+  }
+}*/
+
+
 /* --- FOOTER (INDEX AND BLOG PAGES) --- */
 .footer {
   margin: 2% 2% 15% 2%;
   border-bottom: 3px solid hsl(294, 100%, 13%);
 }
 
-/* --- INDEX - MEDIA QUERIES --- */
-
-/* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {
-  .index-title {
-    border-bottom: 3px solid hsl(294, 100%, 20%);
-    border-right: 3px solid hsl(294, 100%, 20%);
-  }
-  .index-title h1 {
-    font-size: 5.0rem;
-    text-align: left;
-  }
-  h2 { 
-    font-size: 4.0rem; 
-    text-align: left;
-  }
-}
 
 /* --- BLOG - HEADING --- */
 

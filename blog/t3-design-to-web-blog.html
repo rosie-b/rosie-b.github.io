@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rosie's EDA Journey - #6 Design to Web</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu+Mono" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+    
+  </head>
+  
+  <body>
+    <div class="container">
+
+      <section>  <!-- blog header -->
+        <div class="row blog-title">
+          <div class="eight columns">
+            <header>
+              <h1>#6 Design to Web</h1>
+            </header>
+          </div>
+          <div class="four columns home-button home-button-top">
+            <figure>
+              <a href="../index.html">
+                <img src="../images/home-button.png" alt="home-button">
+              </a>
+            </figure>
+          </div>
+        </div>
+      </section>
+        
+      <section>  <!-- main blog content & blog links -->
+        
+        <div class="row">  <!-- main content -->
+          <div class="two columns">  <!--whitespace-->
+            <p></p>
+          </div>
+
+          <div class="eight columns">
+            <header>
+              <h3>Responsive site</h3>
+              <p>
+                What is it and why is it important?
+              </p>
+            </header>
+            <p>
+              A responsive site is where the site layout, sizes, look, feel and (if appropriate) function all change depending on the size of device the user is accessing the site from. 
+            </p>
+            <p>
+              This is important because users now access the internet from many different sized screens, which also vary from being touch screen to keyboard/mouse driven. And that means that the impact of a site being only built for one of these mediums is big and could be the difference between someone using your site/product or going elsewhere.
+            </p>
+ 
+            <header>
+              <h3>Mobile first design</h3>
+              <p>
+                What is it and why is it important?
+              </p>
+            </header>
+            <p>
+              This is where the site is built on the assumption that the user will access it from a mobile device, with all code written for this and then the additional queries relating to bigger screens are added on.
+            </p>
+            <p>
+              This is important for styling, usability and performance. For instance, a smaller screen will need to have the content be visible  (don't want to be zooming in/out to navigate the page and read the content). It will also be touch screen, so buttons about the size of a finger will be more user friendly than a hyperlink from a word/phrase. From a performance perspective, the amount of processing power a mobile device has will likely be lower than a desktop. By coding for mobile first, anything dictating the look/content/functionality for larger decives will only be accessed by those larger devices. So the smaller mobile device doesn't need to sift through all that code just to get to the relevant bits. 
+            </p>
+
+            <header>
+              <h3>Frameworks</h3>
+            </header>
+            <p>
+              <u>Pros:</u>
+              <ul>
+                <li>Don't need to "reinvent the wheel" each time a new project is started.</li>
+                <li>Good way to learn what is possible or a differnt way of approaching something.</li>
+                <li>Consistency of approach, naming convensions, methods makes it easier for a developer to pick up pieces of work from others and keep on going with it.</li>
+                <li>Reduced build time, especially if familiar with the framework being used.</li>
+              </ul>
+            </p>
+            <p>
+              <u>Cons:</u>
+              <uL>
+                <li>Learning a new framework can take more time than writing from scratch (especially for a small project).</li>
+                <li>Could become reliant on a framework and limit the amount of exploration/play that could lead to a better way of coding an element.</li>
+                <li>Dependency on a framework that has been build by someone else.</li>
+                <li>Potential for reduced performance if the framework has more code than required.</li> 
+              </uL>
+            </p>
+ 
+            <header>
+              <h3>Wireframes</h3>
+              <p>
+                What is it and why do we use it?
+              </p>
+            </header>
+            <p>
+              These are the basic plans that we draw up before starting to build a site, mapping out the basic structure and elenments of the page. We use the wireframe to make it easier to understand how to best code the site (containers, sections, divisions, headers etc). And also to plan how the site may look/be structured in both mobile and desktop view. These drawings are then a useful visual tool to use as coding progreses.
+            </p>
+          </div>
+
+          <div class="two columns">  <!--whitespace-->
+            <p></p>
+          </div> 
+        </div>
+        
+        <!-- Add and position your wireframe images from your username.github.io/images/ directory. This will be a 'content' image, so add it as an HTML element. -->
+        <div class="row" style="text-align: center;">
+          <figure>
+            <img class="row-img" src="../images/wireframe-index-page-mobile.jpg" alt="wireframe-index-page-mobile">
+            <figcaption>
+              Wireframe of my index page, mobile view.
+            </figcaption>
+          </figure>
+        </div>  
+        <div class="row" style="text-align: center;">
+          <figure>
+              <img class="row-img" src="../images/wireframe-index-page-desktop.jpg" alt="wireframe-index-page-desktop">
+              <figcaption>
+                Wireframe of my index page, desktop view.
+              </figcaption>
+            </figure>
+        </div>
+        <div class="row" style="text-align: center;">
+          <figure>
+            <img class="row-img" src="../images/wireframe-blog-page-mobile.jpg" alt="wireframe-blog-page-mobile">
+            <figcaption>
+              Wireframe of my blog page, mobile view.
+            </figcaption>
+          </figure>
+        </div>              
+        <div class="row" style="text-align: center;">
+          <figure>  
+            <img class="row-img" src="../images/wireframe-blog-page-desktop.jpg" alt="wireframe-blog-page-desktop">
+            <figcaption>
+              Wireframe of my blog page, desktop view.
+            </figcaption>
+          </figure>
+        </div>  
+
+        <div class="row">
+          <div class="two columns">  <!--whitespace-->
+            <p></p>
+          </div> 
+
+          <div class="eight columns">
+            <header>
+              <h3>Implementing the wireframe</h3>
+            </header>
+            <p>
+              Challenges in my wireframe came from not having the time or skills (yet) to get the layout/functionality that I really want (e.g. working out the best ways to organise the divisions to get a certain look for the blog page navigation - I couldn't get this to look the way I designed it). 
+            </p>
+            <p>
+                Along with this, came the challenge of knowing when I've tried enough different angles to get something to look like my wireframe and when I just need to accept that it will look different and move on.
+            </p>
+            <p>
+              I can imagine that this will be a key challenge in bringing designs to life in future projects, with the key to this being able to understand what is possible in the time/with the skills available. Then, what could be possible with more time and exploration. And keeping the communication live throughout to make sure that any deviations from the wireframe are accepetable. 
+            </p>
+          </div>
+
+          <div class="two columns">  <!--whitespace-->
+            <p></p>
+          </div> 
+        </div>
+    
+        <nav>  <!-- navigation at bottom of page -->
+
+          <div class="row">  <!-- header and first 3x blog links -->
+            <div class="three columns">  <!--whitespace-->
+              <p></p>
+            </div>
+            
+            <!-- blog links -->
+            <div class="six columns blog-nav">
+              <header>
+                <h2>Blogs</h2>
+              </header>
+              <ul>
+                <li><a class="button" href="../blog/c1-reflection-blog.html">#1 Reflection</a></li>
+                <li><a class="button" href="../blog/c1-time-and-habits-blog.html">#2 Time + Habits</a></li>
+                <li><a class="button" href="../blog/t2-html-css-dom-p1.html">#3 HTML CSS + DOM (Pt 1)</a></li>
+                <li><a class="button" href="../blog/t2-html-css-dom-p2.html">#4 HTML CSS + DOM (Pt 2)</a></li>
+                <li><a class="button" href="../blog/c2-emotional-intelligence.html">#5 Emotional Intelligence</a></li>
+                <li><a class="button" href="../blog/c2-emotional-intelligence.html">#6 Design to Web</a></li>
+              </ul>
+            </div>
+                        
+            <div class="three columns">  <!--whitespace-->
+              <p></p>
+            </div> 
+          
+          </div>
+          <div class="row home-button home-button-bottom">
+              <figure>
+                  <a href="../index.html">
+                    <img src="../images/home-button.png" alt="home-button">
+                  </a>
+                </figure>
+          </div>
+
+        </nav>
+    
+      </section>
+
+      <!-- footer -->
+      <div class="row footer">
+      </div>
+
+    </div>
+    
+  </body>
+</html>
