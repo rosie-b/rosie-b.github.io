@@ -1,66 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
-  
+<html>
   <head>
-    <title>Rosie's Blog</title>
+    <title>Rosie's EDA Journey - #3 HTML CSS + DOM (Pt 1)</title>
     <meta charset="UTF-8">
-    <link href="../styles/main.css" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu+Mono" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+    
   </head>
   
   <body>
+    <div class="container">
+
+      <section>  <!-- blog header -->
+        <div class="row blog-title">
+          <div class="eight columns">
+            <header>
+              <h1>#3 HTML CSS + DOM (Pt 1)</h1>
+            </header>
+          </div>
+          <div class="four columns home-button home-button-top">
+            <figure>
+              <a href="../index.html">
+                <img src="../images/home-button.png" alt="home-button">
+              </a>
+            </figure>
+          </div>
+        </div>
+      </section>
+        
+      <section>  <!-- main blog content & blog links -->
+        
+        <div class="row">  <!-- main content -->
+          <div class="two columns">  <!--whitespace-->
+            <p></p>
+          </div>
+
+          <div class="eight columns">
+            <h3>Website Wishlist</h3>
+            <p>
+              In viewing other website designs, it gives a really interesting insight into how many different ways there are to display information.
+              But even more facinating is the number of different ways that people design the features in the back end, for what may appear to be very similar features from a user's perspective.
+            </p>
+            <p> 
+              Some items for my wishlist at this point are:
+            </p>    
+            <ul>
+              <li class="bulletpoint">Links to other pages that appear to be 3D buttons</li>
+              <li class="bulletpoint">Shapes/design in header that appears to spill out over the heading box (e.g. Zen Garden - "Like the Sea")</li>
+              <li class="bulletpoint">Fixed header and navigation sections, so that these are always visible to the user</li>
+              <li class="bulletpoint">A progress bar showing how far down the page the user is. I'm not sure how practical or useful this last one is, but it seems like a fun feature!</li>
+            </ul> 
+            <h3>Can you think of an analogy to describe HTML, CSS and the DOM? How would you describe it to your non-technical friend?</h3>
+            <p>
+              The house analogy is used a lot because it's such a good one!
+            </p>  
+            <ul>
+              <li>HTML is the plan for the structure of the house - the foundations, frames, walls, roof, layout of the rooms, where are the doors, windows.</li>
+              <li>CSS is then the plan for that details the decoration for the house - colour of the paint, wallpaper, curtains, carpet.</li>
+              <li>DOM (document object model) then takes these plans and brings them to life.</li>
+            </ul>
+            <p>
+              I find this analogy really helpful when considering how to approach the design of the code itself. As with designing a house, you need to take into account that people make come and go at different stages of the build - making their own additions or needing to interpret your design. So, it's helpful to keep the code as simple and consistent as possible. Also, keep in mind that you may want to make changes in the future. Is the design flexible enough that it can be modified efficiently? Or is it filled with bespoke one-off features and dependencies that may not be obvious? 
+            </p>
+            <h3>What is meant by boxifying design?</h3>
+            <p>
+              This is the process of taking a design for a site and then breaking it down into boxes to understand how translate this into HTML code. This will usually consist of the higher level boxes (e.g. header, content, navigation, footer), with a series of boxes within these (e.g. divisions, paragraphs, headings, text, images). This hierarchy of boxes then become the underlying HTML structure of a site.
+            </p>
+            <p>
+              There are a number of ways that people may complete a boxify design, including printing out a design and cutting it up with scissors, sketching the boxes up with pen/paper or using drawing boxes directly on the design (either on a print out or on screen). 
+            </p>
+            <h3>What is the box model?</h3>
+            <p>
+              Each box referenced above consists of 4x elements - content, padding, border and margin. Each of these have dimensions that can be adjusted to change the look/layout of the site,
+            </p>
+            <p id="box_model">
+              <img src="../images/box_model.png" alt="box_model" style="width:200px;border:0px;">
+            </p>
+          </div>
+
+          <div class="two columns">  <!--whitespace-->
+            <p></p>
+          </div> 
+        </div>
     
-    <header>
-        <h1>Technical Blog - Part 1 - Udacity Reflection</h1>
-    </header>   
-    <div class="main_content">
-        <h3>Website Wishlist</h3>
-        <p>
-            In viewing other website designs, it gives a really interesting insight into how many different ways there are to display information.
-            But even more facinating is the number of different ways that people design the features in the back end, for what may appear to be very similar features from a user's perspective.
-        </p>
-        <p> 
-            Some items for my wishlist at this point are:
-        </p>    
-        <ul>
-            <li class="bulletpoint">Links to other pages that appear to be 3D buttons</li>
-            <li class="bulletpoint">Shapes/design in header that appears to spill out over the heading box (e.g. Zen Garden - "Like the Sea")</li>
-            <li class="bulletpoint">Fixed header and navigation sections, so that these are always visible to the user</li>
-            <li class="bulletpoint">A progress bar showing how far down the page the user is. I'm not sure how practical or useful this last one is, but it seems like a fun feature!</li>
-        </ul> 
-        <h3>Can you think of an analogy to describe HTML, CSS and the DOM? How would you describe it to your non-technical friend?</h3>
-        <p>
-           The house analogy is used a lot because it's such a good one!
-        </p>  
-        <ul>
-            <li>HTML is the plan for the structure of the house - the foundations, frames, walls, roof, layout of the rooms, where are the doors, windows.</li>
-            <li>CSS is then the plan for that details the decoration for the house - colour of the paint, wallpaper, curtains, carpet.</li>
-            <li>DOM (document object model) then takes these plans and brings them to life.</li>
-        </ul>
-        <p>
-            I find this analogy really helpful when considering how to approach the design of the code itself. As with designing a house, you need to take into account that people make come and go at different stages of the build - making their own additions or needing to interpret your design. So, it's helpful to keep the code as simple and consistent as possible. Also, keep in mind that you may want to make changes in the future. Is the design flexible enough that it can be modified efficiently? Or is it filled with bespoke one-off features and dependencies that may not be obvious? 
-        </p>
-        <h3>What is meant by boxifying design?</h3>
-        <p>
-            This is the process of taking a design for a site and then breaking it down into boxes to understand how translate this into HTML code. This will usually consist of the higher level boxes (e.g. header, content, navigation, footer), with a series of boxes within these (e.g. divisions, paragraphs, headings, text, images). This hierarchy of boxes then become the underlying HTML structure of a site.
-        </p>
-        <p>
-            There are a number of ways that people may complete a boxify design, including printing out a design and cutting it up with scissors, sketching the boxes up with pen/paper or using drawing boxes directly on the design (either on a print out or on screen). 
-        </p>
-        <h3>What is the box model?</h3>
-        <p>
-            Each box referenced above consists of 4x elements - content, padding, border and margin. Each of these have dimensions that can be adjusted to change the look/layout of the site,
-        </p>
-        <p id="box_model">
-            <img src="../images/box_model.png" alt="box_model" style="width:200px;border:0px;">
-        </p>
+      <nav>  <!-- navigation at bottom of page -->
+
+        <div class="row">  <!-- header and first 3x blog links -->
+          <div class="three columns">  <!--whitespace-->
+            <p></p>
+          </div>
+          
+          <!-- blog links -->
+          <div class="six columns blog-nav">
+            <header>
+              <h2>Blogs</h2>
+            </header>
+            <ul>
+              <li><a class="button" href="../blog/c1-reflection-blog.html">#1 Reflection</a></li>
+              <li><a class="button" href="../blog/c1-time-and-habits-blog.html">#2 Time + Habits</a></li>
+              <li><a class="button" href="../blog/t2-html-css-dom-p1.html">#3 HTML CSS + DOM (Pt 1)</a></li>
+              <li><a class="button" href="../blog/t2-html-css-dom-p2.html">#4 HTML CSS + DOM (Pt 2)</a></li>
+              <li><a class="button" href="../blog/c2-emotional-intelligence.html">#5 Emotional Intelligence</a></li>
+            </ul>
+          </div>
+                      
+          <div class="three columns">  <!--whitespace-->
+            <p></p>
+          </div> 
+        
+        </div>
+        <div class="row home-button home-button-bottom">
+            <figure>
+                <a href="../index.html">
+                  <img src="../images/home-button.png" alt="home-button">
+                </a>
+              </figure>
+        </div>
+
+      </nav>
+  
+    </section>
+
+    <!-- footer -->
+    <div class="row footer">
     </div>
-    <footer>
-        <a href="../index.html">
-            <img src="../images/home_button.png" alt="home_button" style="width:100px;border:0px;"> 
-        </a>
-    </footer>
 
-</body>
-
+    </div> 
+    
+  </body>
 </html>

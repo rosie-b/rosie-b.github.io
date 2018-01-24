@@ -11,11 +11,6 @@ body {
 
 /* --- INDEX - HEADING --- */
 
-.header-container {
-  width: 100%;
-  position: fixed;
-}
-
 .index-title {
   margin: 1%;
   font-family: Courier New, Courier, monospace;
