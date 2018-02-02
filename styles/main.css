@@ -83,33 +83,15 @@ h3 {
   color: hsl(294, 0%, 30%);
 }
 
-/*
-.column-img-style {
-  text-align: center;
-  min-width:   
-}
-
-.four-columns-img {
-  min-width: 45px;
-  max-width: 200px;
-  padding: 0.5%;
-}
-*/
-
 .row-img {
   min-width: 50px;
   max-width: 200px;
 }
 
-/* --- MAINT CONTENT - MEDIA QUERIES --- */
-
-/* Larger than phablet (also point when grid becomes active) */
-/*@media (min-width: 550px) {
-  .four-columns-img {
-  max-width: 50px;
-  }
-}*/
-
+.quote {
+  margin-left: 20px;
+  margin-right: 20px; 
+}
 
 /* --- FOOTER (INDEX AND BLOG PAGES) --- */
 .footer {
