@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Rosie's EDA Journey - #2 Time + Habits</title>
+    <title>Rosie's EDA Journey - #15 Scope</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -16,10 +16,11 @@
     <div class="container">
 
       <section>  <!-- blog header -->
+
         <div class="row blog-title">
           <div class="eight columns">
             <header>
-              <h1>#2 Time + Habits</h1>
+              <h1>#15 Scope</h1>
             </header>
           </div>
           <div class="four columns home-button home-button-top">
@@ -30,6 +31,7 @@
             </figure>
           </div>
         </div>
+        
       </section>
         
       <section>  <!-- main blog content & blog links -->
@@ -41,35 +43,25 @@
 
           <div class="eight columns">
             <header>
-              <h3>Which timebox and habits techniques did you try?</h3>
+              <h3>What is scope and how does it work?</h3>
             </header>
             <p>
-              I have been trying the "4 questions to ask yourself each day", from earlier resources/articles on the concept. This is to help me build awareness of what I'm trying to achieve, what I think I'm able to achieve today and then what I'm actually able to achieve in the time I have available. The questions are:
+              Scope in JavaScript is related to where we declare variables and functions, which impacts on accessibility of these throughout the source code. Scope can either be <em>global</em> or <em>local</em>.
             </p>
-            <ul>
-              <li><u>Start of day:</u> What are my goals today? What are my challenges today?</li>
-              <li><u>End of day:</u> Have I reached my goals today? What have I learned today?</li>
-            </ul> 
             <p>
-              I have also been paying closer attention to myself and when my mind wonders, bringing it back on task. If that's not working, I'll stop and get a cuppa.
+              <strong>Global</strong><br>This is where we declare a variable <em>outside</em> of any particular function. This variable is then accessible/visible <em>globally</em> to all functions throughout the source code.
             </p>
-            <header>
-              <h3>What did you find interesting?</h3>
-            </header>
             <p>
-              A lot of the materials were familiar, as I've been starting to explore this area in recent months. I find the fixed vs growth mindset particularly interesting. Since reading the book, it's been really fascinating exploring where my headspace is at in a current moment/on a current task (particularly if I'm feeling challenged or stressed out). And in reflecting on past situations, analysing where I may have been at and what impact this had.
+              This could be helpful if your source code is relatively simple/short and you know that a variable will be used across a few functions. You can easily update details for this variable, without the need to go into the individual functions to do this (reducing the risk of human error or introducing bugs in the process).</li>
             </p>
-            <header>
-              <h3>What worked for you?</h3>
-            </header>
             <p>
-              Setting daily tasks and reflecting on these has been great for keeping me on task, having tangible achievements each day and helping me improve on my estimation skills.
+              That said, it is a good idea to keep global scope to a minimum, to reduce the risk of accidentally using a global variable within a function (e.g. spelling mistake) and the ramifications this could have on performance, output or otherwise. Also, if you consider that when writing a code you are trying to break this down into simple modules and functions with one purpose, if you were to have many functions linking up to the same global variables, this could get very complicated and make for a lot of dependency issues.
             </p>
-            <header>
-              <h3>Which will you experiment further with?</h3>
-            </header>
             <p>
-              I will be experimenting with the Pomodoro technique. I'll also be delving more into meditation techniques, as this is something I've found challenging and want to improve on.
+              <strong>Local</strong><br>When a variable is declared <em>within</em> a function, this then is only accessible/visible <em>locally</em> within the function (or in functions nested further within this one).
+            </p>
+            <p>
+              The use of local scope is helpful when dealing with large, complex source code (i.e. breaking down into modular compnents) and enables the use of the same variable names across multiple functions, without overwriting or impacting on eachother.  
             </p>
           </div>
 
@@ -84,8 +76,8 @@
             <div class="three columns">  <!--whitespace-->
               <p></p>
             </div>
-          
-          <!-- blog links -->
+            
+            <!-- blog links -->
             <div class="six columns blog-nav">
               <header>
                 <h2>Blogs</h2>
@@ -108,20 +100,20 @@
                 <li><a class="button" href="../blog/t7-scope.html">#15 Scope</a></li>
               </ul>
             </div>
-                      
+                        
             <div class="three columns">  <!--whitespace-->
               <p></p>
             </div> 
-
           </div>
-        
+          
           <div class="row home-button home-button-bottom">
-            <figure>
-              <a href="../index.html">
-                <img src="../images/home-button.png" alt="home-button">
-              </a>
-            </figure>
+              <figure>
+                <a href="../index.html">
+                  <img src="../images/home-button.png" alt="home-button">
+                </a>
+              </figure>
           </div>
+
         </nav>
   
       </section>
